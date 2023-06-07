@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+<script defer src="{{url_for('static', filename= 'js/index.js')}}"></script>
+<div class="container">
+    <div>
+        <h1>
+            优化文章并且生成相应图片的应用
+        </h1>
+        <form action="/result" method="post">
+            <div class="input-group">
+                <label for="article">请输入待优化的文本:</label>
+                <textarea name="article" id="article"></textarea>
+            </div>
+            <button type="submit">优化</button>
+            <div class="spinner hide"></div>
+        </form>
+    </div>
+</div>
+{% endblock %}

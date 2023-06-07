@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+    <div class="result-group">
+        <h2>原文</h2>
+        <pre>{{article}}</pre>
+    </div>
+    <div class="result-group">
+        <h2>优化文章</h2>
+        <pre>{{enhanced}}</pre>
+    </div>
+    <div class="result-group">
+        <h2>生成图片</h2>
+        <h3>生成图片的提示词</h3>
+        <pre>{{image_prompt}}</pre>
+        {% if img_url %}
+        <a class="button" href="{{ img_url }}" download>Download this image</a>
+        <img src="{{ img_url }}" alt="Generated image for the article" />
+        {% else %}
+        <p>
+            There was an error generating the image. Most certainly it was
+            because of rate limiting. Try again in one hour.
+        </p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
