@@ -24,3 +24,9 @@ text-to-img: [StableDiffiusion](https://nlpcloud.com/home/playground/image-gener
 text-to-text: [百度智能云](https://ai.baidu.com/ai-doc/NLP/Ml9i5amtk)
 
 text-to-img: [智谱GLM](https://open.bigmodel.cn/dev/api#overview)
+
+**other inferences**:
+
+[开源大模型食用指南](https://github.com/datawhalechina/self-llm)
+
+[动手学大模型应用开发](https://github.com/datawhalechina/llm-universe)
